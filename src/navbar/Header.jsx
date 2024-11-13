@@ -1,32 +1,46 @@
-import React from 'react';
-import '../navbar/Header.css';  
+import React, { useState } from 'react';
+import '../navbar/Header.css';
+import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaHome, FaBars, FaTimes } from 'react-icons/fa';
 
 export const Header = () => {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div>
       {/* Header Top Strip */}
       <div className="top-strip">
         <span className="date-time">November 13, 2024 | 4:56 PM</span>
         <div className="social-icons">
-          <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-          <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
-          <a href="#"><img src="youtube-icon.png" alt="YouTube" /></a>
-          <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+          <a href="#"><FaFacebookF /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaYoutube /></a>
+          <a href="#"><FaInstagram /></a>
+          <select className="language-select">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+          </select>
         </div>
-        <select className="language-select">
-          <option value="English">English</option>
-          <option value="Hindi">Hindi</option>
-        </select>
       </div>
 
       {/* Main Header */}
       <header className="main-header">
-        <img src="department-logo.png" alt="Department Logo" className="logo" />
+        <img src="/logo.png" alt="Department Logo" className="logo" />
         <div className="header-content">
           <h1>Department of Information and Public Relations<br /> Government of Arunachal Pradesh</h1>
         </div>
-        <nav className="nav-menu">
-          <a href="#"><img src="home-icon.png" alt="Home" className="home-icon" /></a>
+        
+        {/* Mobile Menu Toggle */}
+        <div className="menu-toggle" onClick={toggleSidebar}>
+          {isSidebarOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {/* Sidebar for Mobile Navigation */}
+        <nav className={`nav-menu ${isSidebarOpen ? 'open' : ''}`}>
+          <a href="#"><FaHome className="home-icon" /></a>
           <a href="#">About Us</a>
           <a href="#">Citizen Services</a>
           <a href="#">Directory</a>
@@ -41,5 +55,6 @@ export const Header = () => {
       </header>
     </div>
   );
-}
+};
 
+export default Header;
