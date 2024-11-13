@@ -11,10 +11,10 @@ export const App = () => {
             path: "/",
             element: <AppLayout />,
             children: [
-                // {
-                //     path: "/",
-                //     element: <Home  /> 
-                // },            
+                {
+                    path: "/",
+                    element: <Home  /> 
+                },            
                 // {
                 //     path: "/footer",
                 //     element: <Footer />
