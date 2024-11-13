@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../pages/Home.css';
+import { Homecards } from '../components/Homecards';
 
 
 const movieImages = [
@@ -56,6 +57,10 @@ export const Home = () => {
                 <p className="home-profile-name">Shri Nyato Dukam</p>
                 <p className="home-profile-role">Minister of IPR</p>
             </div>
+            
+            
         </div>
+        
+        
     );
 };

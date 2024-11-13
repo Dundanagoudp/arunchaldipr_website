@@ -77,6 +77,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  overflow: hidden;
 }
 
 .nav-menu a {

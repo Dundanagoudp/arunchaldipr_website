@@ -15,10 +15,10 @@ export const App = () => {
                     path: "/",
                     element: <Home  /> 
                 },            
-                // {
-                //     path: "/footer",
-                //     element: <Footer />
-                // }
+                {
+                    path: "/footer",
+                    element: <Footer />
+                }
             ]
         }
     ]);
