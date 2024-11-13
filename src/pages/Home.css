@@ -1,10 +1,10 @@
+/* .home-container and related styles */
 .home-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     width: 100%;
-    max-width: 1400px;
     padding: 20px;
 }
 
@@ -39,9 +39,10 @@
 
 .home-image-container {
     position: relative;
-    width: 1500px;
+    width: 100%; /* Changed to 100% width for responsive scaling */
     height: 350px;
     max-width: 100%;
+    overflow: hidden; /* Ensure images stay within the container */
 }
 
 .slider {
@@ -71,29 +72,29 @@
     }
 
     .home-image-container {
-        max-width: 1200px;
+        max-width: 100%;
     }
 }
 
+/* Carousel for images */
 .carousel {
     display: flex;
-    width: 92%;
+    width: 100%; /* Adjusted to ensure it takes up the full width */
     height: 100%;
     position: relative;
     margin: auto;
-    overflow-x: visible !important;
+    overflow: hidden; /* Prevent images from overflowing */
     scroll-behavior: smooth;
 }
 
 .slider {
     flex: 0 0 auto;
-    margin-right: 30px;
+    margin-right: 20px; /* Reduced margin to prevent overflow */
     position: relative;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    left: 0;
     transition: 1s;
     overflow: hidden;
 }
@@ -138,5 +139,4 @@
         font-size: 0.9rem;
         padding: 8px;
     }
-    
 }
