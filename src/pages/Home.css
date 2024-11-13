@@ -140,3 +140,20 @@
         padding: 8px;
     }
 }
+
+/* .homecards-section {
+    margin-top: 40px; 
+        padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 767px) {
+    .homecards-section {
+      flex-direction: column;
+      padding: 10px;
+    }
+  } */
+  

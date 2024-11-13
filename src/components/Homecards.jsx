@@ -9,7 +9,7 @@ export const Homecards = () => {
                 <h2>Festivals</h2>
                 <div className="homecards-festivals-container">
                     <div className="homecards-festival-card">
-                        <img src="festival-image.jpg" alt="Festival Image" />
+                        <img src="./s1.webp" alt="Festival Image" />
                         <div className="homecards-festival-content">
                             <h3>CHILDREN'S CORNER</h3>
                             <p>Itanagar, November 13-15, 2024 Parents, get ready to spark your child’s imagination as the Arunachal Literature Festival introduces an enchanting new feature.</p>
