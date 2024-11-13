@@ -33,6 +33,13 @@ export const Home = () => {
                 <p className="home-profile-role">Hon'ble Chief Minister</p>
             </div>
 
+            {/* Main Image (Scrollable Container) */}
+            {/* <div className="home-main-content2">
+                <div className="home-image-container">
+                    <img src="/b1.webp" className="home-event-img2" alt="Event 1" />
+                    
+                </div>
+            </div> */}
             <div className='home-main-content'>
             <div className="carousel-container">
         <div className="home-image-container">
