@@ -1,0 +1,90 @@
+/* General Reset */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Top Strip */
+    .top-strip {
+      background-color: #1C2B78;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    .date-time {
+      font-size: 12px;
+    }
+    
+    .social-icons a {
+      margin: 0 5px;
+      display: inline-block;
+    }
+    
+    .social-icons img {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .language-select {
+      background-color: white;
+      color: #333;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    
+    /* Main Header */
+    .main-header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      font-family: Arial, sans-serif;
+    }
+    
+    .logo {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+    
+    .header-content h1 {
+      font-size: 14px;
+      color: #1C2B78;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+    
+    /* Navigation Menu */
+    .nav-menu {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .nav-menu a {
+      text-decoration: none;
+      color: #1C2B78;
+      font-size: 13px;
+      padding: 5px 5px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-menu a:hover {
+      color: #000;
+    }
+    
+    .home-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+    
