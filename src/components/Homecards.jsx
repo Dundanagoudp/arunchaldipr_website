@@ -51,16 +51,16 @@ export const Homecards = () => {
             <div className="homecards-right-section">
                 <h2>State Government Websites</h2>
                 <ul>
-                    <li>Departments</li>
-                    <li>Directorates</li>
-                    <li>Organizations & Boards List</li>
-                    <li>Universities</li>
-                    <li>Tenders</li>
+                    <li><a href="https://arunachalpradesh.gov.in/department.html" target="_blank" rel="noopener noreferrer">Departments</a></li>
+                    <li><a href="https://igod.gov.in/index.php/sg/AR/E004/organizations" target="_blank" rel="noopener noreferrer">Directorates</a></li>
+                    <li><a href="https://igod.gov.in/index.php/sg/AR/E011/organizations" target="_blank" rel="noopener noreferrer">Organizations & Boards List</a></li>
+                    <li><a href="https://education.arunachal.gov.in/" target="_blank" rel="noopener noreferrer">Universities</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tenders</a></li>
                 </ul>
                 <h2>Documents for Citizens</h2>
                 <ul>
-                    <li>Government Orders</li>
-                    <li>Gazettes</li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Government Orders</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Gazettes</a></li>
                 </ul>
             </div>
         </div>

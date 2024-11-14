@@ -17,8 +17,8 @@ export const Footer = () => {
           <h4>Citizen Services</h4>
           <ul>
             <li><a href="#">e - ILP</a></li>
-            <li><a href="#">e - Service</a></li>
-            <li><a href="#">APST Bus Service</a></li>
+            <li><a href="https://eservice.arunachal.gov.in/">e - Service</a></li>
+            <li><a href="https://apsts.arunachal.gov.in/">APST Bus Service</a></li>
             <li><a href="#">Application Forms</a></li>
           </ul>
         </div>

@@ -1,19 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../navbar/Header.css';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaHome, FaBars, FaTimes } from 'react-icons/fa';
 
 export const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
+  };
+
+  // Update the date and time every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000); // Updates every second
+
+    // Cleanup the timer on component unmount
+    return () => clearInterval(timer);
+  }, []);
+
+  // Format the date and time as "November 13, 2024 | 4:56 PM"
+  const formatDateTime = (date) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
+    return date.toLocaleString('en-US', options);
   };
 
   return (
     <div>
       {/* Header Top Strip */}
       <div className="top-strip">
-        <span className="date-time">November 13, 2024 | 4:56 PM</span>
+        <span className="date-time">{formatDateTime(currentDateTime)}</span>
         <div className="social-icons">
           <a href="#"><FaFacebookF /></a>
           <a href="#"><FaTwitter /></a>
@@ -58,5 +75,3 @@ export const Header = () => {
     </div>
   );
 };
-
-
