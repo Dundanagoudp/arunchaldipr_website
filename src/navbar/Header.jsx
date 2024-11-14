@@ -48,7 +48,7 @@ export const Header = () => {
           <a href="#">Publications</a>
           <a href="#">Policies</a>
           <a href="#">Announcements</a>
-          <a href="#">Media</a>
+          <a href="/media">Media</a>
           <a href="#">Schemes</a>
           <a href="#">Contact Us</a>
         </nav>

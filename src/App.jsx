@@ -6,6 +6,7 @@ import { HomeSection } from "./components/HomeSection";
 
 import { About } from "./pages/About";
 import { Whowho } from "./pages/WhoWho";
+import { Media } from "./pages/Media";
 
 
 export const App = () => {
@@ -35,6 +36,10 @@ export const App = () => {
                     path:"/whowho",
                     element:<Whowho/>
                 },
+                {
+                    path:"/media",
+                    element:<Media/>
+                }
             ]
         }
     ]);
