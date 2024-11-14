@@ -16,7 +16,7 @@ export const RecentVideos = () => {
                         ></iframe>
                     </div>
                     <div className="video-description">
-                        <a href="#">Unfolding Words: Arunachal Literature Festival 2024 Schedule</a>
+                        Unfolding Words: Arunachal Literature Festival 2024 Schedule
                     </div>
                 </div>
 

@@ -33,9 +33,9 @@ body {
       transition: transform 0.3s;
   }
   
-  .video-item:hover {
+  /* .video-item:hover {
       transform: translateY(-5px);
-  }
+  } */
   
   .video-frame {
       width: 100%;
@@ -46,11 +46,11 @@ body {
   .video-description {
       padding: 10px;
       font-size: 14px;
-      color: #555;
+      color: #000000;
   }
   
   .video-description a {
-      color: #1a73e8;
+      /* color: #1a73e8; */
       text-decoration: none;
       font-weight: bold;
   }
@@ -73,4 +73,5 @@ body {
           max-width: 100%;
       }
   }
+  
   
