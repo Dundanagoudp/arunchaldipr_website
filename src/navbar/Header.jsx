@@ -42,7 +42,7 @@ export const Header = () => {
         <nav className={`nav-menu ${isSidebarOpen ? 'open' : ''}`}>
           <a href="/"><FaHome className="home-icon" /></a>
           <a href="/about">About Us</a>
-          <a href="#">Who’s Who</a>
+          <a href="/whowho">Who’s Who</a>
           <a href="#">Directory</a>
           <a href="#">Tourism</a>
           <a href="#">Publications</a>
@@ -50,7 +50,7 @@ export const Header = () => {
           <a href="#">Announcements</a>
           <a href="/media">Media</a>
           <a href="#">Schemes</a>
-          <a href="#">Contact Us</a>
+          <a href="/contact">Contact Us</a>
         </nav>
       </header>
     </div>

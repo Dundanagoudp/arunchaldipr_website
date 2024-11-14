@@ -7,6 +7,7 @@ import { HomeSection } from "./components/HomeSection";
 import { About } from "./pages/About";
 import { Whowho } from "./pages/WhoWho";
 import { Media } from "./pages/Media";
+import { Contact } from "./pages/Contact";
 
 
 export const App = () => {
@@ -39,6 +40,10 @@ export const App = () => {
                 {
                     path:"/media",
                     element:<Media/>
+                },
+                {
+                    path:"/contact",
+                    element:<Contact/>
                 }
             ]
         }

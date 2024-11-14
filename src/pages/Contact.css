@@ -1,0 +1,185 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+  }
+  
+  .contact-section {
+      width: 80%;
+      margin: 0 auto;
+      padding: 2rem 0;
+      color: #1C2B78;
+  }
+  
+  .contact-section h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #1C2B78;
+  }
+  
+  .contact-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  }
+  
+  .contact-info {
+      flex: 1;
+      text-align: left; /* Align text to the left */
+  }
+  
+  .contact-info h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+  }
+  
+  .contact-info p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #555;
+      text-align: left; /* Align text to the left */
+  }
+  
+  .address p {
+      font-weight: bold;
+  }
+  
+  .email p {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #1C2B78;
+      text-align: left; /* Align text to the left */
+  }
+  
+  .email span {
+      font-size: 1.2rem;
+  }
+  
+  .map-container {
+      flex: 1;
+      height: 250px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 1rem;
+  }
+  
+  .also-check {
+      text-align: left;
+  }
+  
+  .also-check h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #1C2B78;
+  }
+  
+  .also-check ul {
+      list-style: none;
+      padding-left: 0;
+  }
+  
+  .also-check li {
+      margin-bottom: 0.5rem;
+  }
+  
+  .also-check li a {
+      text-decoration: none;
+      color: #1C2B78;
+  }
+  
+  .also-check li a:hover {
+      text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+      .contact-section {
+          width: 90%;
+      }
+  
+      .contact-container {
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+      }
+  
+      .map-container {
+          width: 100%;
+          height: 200px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .contact-section {
+          width: 95%;
+          padding: 1rem 0;
+      }
+  
+      .contact-container {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .map-container {
+          width: 100%;
+          height: 200px;
+      }
+  
+      .contact-info h2 {
+          font-size: 1.4rem;
+      }
+  
+      .contact-info p {
+          font-size: 1rem;
+      }
+  
+      .also-check h3 {
+          font-size: 1.2rem;
+      }
+  
+      .also-check li {
+          font-size: 0.9rem;
+      }
+  
+      .email p {
+          font-size: 1rem;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .contact-section h1 {
+          font-size: 1.8rem;
+      }
+  
+      .contact-info h2 {
+          font-size: 1.3rem;
+      }
+  
+      .contact-info p {
+          font-size: 0.9rem;
+      }
+  
+      .also-check h3 {
+          font-size: 1rem;
+      }
+  
+      .also-check li {
+          font-size: 0.8rem;
+      }
+  
+      .email p {
+          font-size: 0.9rem;
+      }
+  }
+  
