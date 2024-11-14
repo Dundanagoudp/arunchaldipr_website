@@ -13,7 +13,7 @@ export const Homecards = () => {
                         <div className="homecards-festival-content">
                             <h3>CHILDREN'S CORNER</h3>
                             <p>Itanagar, November 13-15, 2024 Parents, get ready to spark your child’s imagination as the Arunachal Literature Festival introduces an enchanting new feature.</p>
-                            <a href="#">View More →</a>
+                            <a href="/singlepostPage">View More →</a>
                         </div>
                     </div>
                 </div>
@@ -26,23 +26,23 @@ export const Homecards = () => {
                 <div className="homecards-news-container">
                     <div className="homecards-news-item">
                         <p>Chief Minister Pema Khandu Hosts Manipur CM N. Biren Singh at Historic Urgyelling Gonpa</p>
-                        <a href="#">Read More »</a>
+                        <a href="/singlepostPage">Read More »</a>
                     </div>
                     <div className="homecards-news-item">
                         <p>CM Pema Khandu Inaugurates Kameng Culture and Heritage Museum in Nyukmadung</p>
-                        <a href="#">Read More »</a>
+                        <a href="/singlepostPage">Read More »</a>
                     </div>
                     <div className="homecards-news-item">
                         <p>CM Pema Khandu Inaugurates Kameng Culture and Heritage Museum in Nyukmadung</p>
-                        <a href="#">Read More »</a>
+                        <a href="/singlepostPage">Read More »</a>
                     </div>
                     <div className="homecards-news-item">
                         <p>CM Pema Khandu Inaugurates Kameng Culture and Heritage Museum in Nyukmadung</p>
-                        <a href="#">Read More »</a>
+                        <a href="/singlepostPage">Read More »</a>
                     </div>
                     <div className="homecards-news-item">
                         <p>Over 200 girls performed a dance choreographed to a song by Bodong Yirang, sung by KGBV teachers.</p>
-                        <a href="#">Read More »</a>
+                        <a href="/singlepostPage">Read More »</a>
                     </div>
                 </div>
             </div>

@@ -59,10 +59,10 @@ export const Home = () => {
 
       {/* Second Homecards Section */}
       <div className="homecards-section">
-        <Homecards /> {/* Render Homecards component here */}
+        <Homecards /> 
       </div>
       <div className="homecards-section2">
-        <HomeSection /> {/* Render Homecards component here */}
+        <HomeSection /> 
       </div>
     </div>
   );

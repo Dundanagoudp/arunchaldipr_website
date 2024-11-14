@@ -8,6 +8,7 @@ import { About } from "./pages/About";
 import { Whowho } from "./pages/WhoWho";
 import { Media } from "./pages/Media";
 import { Contact } from "./pages/Contact";
+import { SinglePostPage } from "./pages/SinglePostpage";
 
 
 export const App = () => {
@@ -44,6 +45,10 @@ export const App = () => {
                 {
                     path:"/contact",
                     element:<Contact/>
+                },
+                {
+                    path:"/singlepostPage",
+                    element:<SinglePostPage/>
                 }
             ]
         }

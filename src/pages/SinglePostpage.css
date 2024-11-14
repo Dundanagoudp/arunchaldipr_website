@@ -1,0 +1,115 @@
+
+    
+    /* Breadcrumb Navigation */
+    .breadcrumb {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    
+    .breadcrumb a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Container */
+    .blog-container {
+      width: 100%;
+      max-width: 800px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Header */
+    .blog-header {
+      text-align: center;
+    }
+    
+    .blog-header h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .blog-header p {
+      font-size: 14px;
+      color: #777;
+      margin-top: 0;
+    }
+    
+    /* Featured Image */
+    .featured-image {
+      width: 70%;
+      max-width: 400px;
+      margin: 20px 0;
+      border-radius: 8px;
+      display: block;
+      align-self: center;
+    }
+    
+    /* Content */
+    .content {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+      width: 90%;
+    }
+    
+    /* Share Buttons */
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .share-buttons a {
+      color: #333;
+      text-decoration: none;
+      font-size: 24px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .share-buttons a:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .share-icon {
+      font-size: 24px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .blog-container {
+        padding: 15px;
+        margin: 10px;
+      }
+    
+      .featured-image {
+        width: 100%;
+      }
+    
+      .content {
+        font-size: 14px;
+        width: 100%;
+      }
+    
+      .blog-header h1 {
+        font-size: 20px;
+      }
+    }
+    
