@@ -3,6 +3,7 @@ import "../components/HomeSection.css";
 import { PublicationsSection } from "./HomeSection3";
 import { OnlineServices } from "./OnlineServices";
 import { RecentPhotos } from "./RecentPhotos";
+import { RecentVideos } from "./RecentVideos";
 
 export const HomeSection = () => {
   return (
@@ -36,6 +37,9 @@ export const HomeSection = () => {
       </div>
       <div className="RecentPhotos1">
        <RecentPhotos/>
+      </div>
+      <div className="RecentVideos1">
+       <RecentVideos/>
       </div>
     </div>
   );

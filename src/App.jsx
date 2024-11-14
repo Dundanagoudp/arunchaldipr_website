@@ -6,6 +6,7 @@ import { HomeSection } from "./components/HomeSection";
 import { PublicationsSection } from "./components/HomeSection3";
 import { OnlineServices } from "./components/OnlineServices";
 import { RecentPhotos } from "./components/RecentPhotos";
+import { RecentVideos } from "./components/RecentVideos";
 
 
 export const App = () => {
@@ -38,6 +39,10 @@ export const App = () => {
                 {
                     path:"/recentphotos",
                     element:<RecentPhotos/>
+                },
+                {
+                    path:"/recentvideos",
+                    element:<RecentVideos/>
                 }
             ]
         }
