@@ -28,7 +28,9 @@ export const Header = () => {
 
       {/* Main Header */}
       <header className="main-header">
-        <img src="/logo.png" alt="Department Logo" className="logo" />
+        <a href="/" className="logo-link">
+          <img src="/logo.png" alt="Department Logo" className="logo" />
+        </a>
         <div className="header-content">
           <h1>Department of Information and Public Relations<br /> Government of Arunachal Pradesh</h1>
         </div>
