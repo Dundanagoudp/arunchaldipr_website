@@ -1,42 +1,22 @@
 import React, { createContext, useContext, useState } from 'react';
 
-// Create a context
+// Create the Language Context
 const LanguageContext = createContext();
 
-// Create a provider
+// Language Provider component to wrap around the AppLayout
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const [selectedLanguage, setSelectedLanguage] = useState('English');
 
-  const translations = {
-    en: {
-      header: {
-        about: 'About Us',
-        contact: 'Contact Us',
-      },
-    },
-    hi: {
-      header: {
-        about: 'हमारे बारे में',
-        contact: 'संपर्क करें',
-      },
-    },
-  };
-
-  const getTranslation = (key) => {
-    const keys = key.split('.'); // Handle nested keys
-    let translation = translations[language];
-    keys.forEach((k) => {
-      translation = translation[k];
-    });
-    return translation || key; // Fallback if translation is not found
+  const toggleLanguage = (language) => {
+    setSelectedLanguage(language);
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, getTranslation }}>
+    <LanguageContext.Provider value={{ selectedLanguage, toggleLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
 };
 
-// Custom hook to use the context
+// Custom hook to use the Language Context in components
 export const useLanguage = () => useContext(LanguageContext);
