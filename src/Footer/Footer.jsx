@@ -34,13 +34,13 @@ export const Footer = () => {
           <h4>Contact Us</h4>
           <ul>
             <li>Directorate of Information & Public Relations,<br />Soochna Bhawan, Papu Nahllah, Naharlagun - 791110</li>
-            <li>dipr_arun@rediffmail.com</li>
-            <li>diprarunx@gmail.com</li>
+            <li><a href="mailto:dipr_arun@rediffmail.com">dipr_arun@rediffmail.com</a></li>
+            <li><a href="mailto:diprarunx@gmail.com">diprarunx@gmail.com</a></li>
           </ul>
         </div>
         <div className="footer-column">
           <h4>Total Visitors</h4>
-          <div className="visitor-counter">017915</div>
+          <div className="visitor-counter">87915</div>
         </div>
       </div>
       <div className="footer-bottom">

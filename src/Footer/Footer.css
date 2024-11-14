@@ -29,6 +29,7 @@
       font-size: 1.2em;
       font-weight: bold;
       margin-bottom: 10px;
+      
   }
   
   .footer-column ul {
@@ -62,7 +63,7 @@
   }
   
   .footer-bottom {
-      background-color: #1a336f;
+      background-color: #15213e;
       padding: 10px;
       font-size: 0.9em;
       color: #ffffff;
