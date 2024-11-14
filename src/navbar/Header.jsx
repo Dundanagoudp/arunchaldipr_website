@@ -41,8 +41,8 @@ export const Header = () => {
         {/* Sidebar for Mobile Navigation */}
         <nav className={`nav-menu ${isSidebarOpen ? 'open' : ''}`}>
           <a href="/"><FaHome className="home-icon" /></a>
-          <a href="#">About Us</a>
-          <a href="#">Citizen Services</a>
+          <a href="/about">About Us</a>
+          <a href="#">Who’s Who</a>
           <a href="#">Directory</a>
           <a href="#">Tourism</a>
           <a href="#">Publications</a>

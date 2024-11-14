@@ -3,11 +3,9 @@ import AppLayout from "./layout/AppLayout";
 import { Home } from "./pages/Home";
 import { Footer } from "./Footer/Footer";
 import { HomeSection } from "./components/HomeSection";
-import { PublicationsSection } from "./components/HomeSection3";
-import { OnlineServices } from "./components/OnlineServices";
-import { RecentPhotos } from "./components/RecentPhotos";
-import { RecentVideos } from "./components/RecentVideos";
-import { LogoSection } from "./components/LogoSection";
+
+import { About } from "./pages/About";
+import { Whowho } from "./pages/WhoWho";
 
 
 export const App = () => {
@@ -30,25 +28,13 @@ export const App = () => {
                     element:<HomeSection/>
                 },
                 {
-                    path:"/publicationssection",
-                    element:<PublicationsSection/>
+                    path:"/about",
+                    element:<About/>
                 },
                 {
-                    path:"/onlineservices",
-                    element:<OnlineServices/>
+                    path:"/whowho",
+                    element:<Whowho/>
                 },
-                {
-                    path:"/recentphotos",
-                    element:<RecentPhotos/>
-                },
-                {
-                    path:"/recentvideos",
-                    element:<RecentVideos/>
-                },
-                {
-                    path:"/logosection",
-                    element:<LogoSection/>
-                }
             ]
         }
     ]);

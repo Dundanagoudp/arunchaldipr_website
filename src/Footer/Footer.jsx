@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="footer-column">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">About State</a></li>
             <li><a href="#">Who's Who</a></li>
           </ul>
