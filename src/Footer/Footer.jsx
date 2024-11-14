@@ -10,7 +10,7 @@ export const Footer = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#">About State</a></li>
-            <li><a href="#">Who's Who</a></li>
+            <li><a href="/whowho">Who's Who</a></li>
           </ul>
         </div>
         <div className="footer-column">
