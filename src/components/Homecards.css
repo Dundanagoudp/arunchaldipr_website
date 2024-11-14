@@ -1,156 +1,181 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
   .homecards-container {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      gap: 20px;
-      width: 100%;
-      max-width: 1200px; /* Adjust max-width for larger screens */
-      padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width for larger screens */
+    padding: 10px;
   }
   
   .homecards-left-section,
   .homecards-middle-section,
   .homecards-right-section {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .homecards-left-section h2,
   .homecards-middle-section h2,
   .homecards-right-section h2 {
-      color: #fff;
-      padding: 10px;
-      background-color: #1C2B78; /* Updated color */
-      border-radius: 8px 8px 0 0;
-      margin-bottom: 10px;
-      text-align: center;
-      font-size: 1.5em; /* Adjusted size */
+    color: #fff;
+    padding: 8px;
+    background-color: #1C2B78;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 1.2em; /* Smaller font size for mobile */
   }
   
   .homecards-middle-section h3 {
-      color: #d9534f;
-      margin-bottom: 10px;
-      font-size: 1.2em; /* Adjusted size */
+    color: #d9534f;
+    margin-bottom: 8px;
+    font-size: 1em; /* Smaller size for news headlines */
   }
   
   .homecards-festivals-container {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 10px 0;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 8px 0;
   }
   
   .homecards-festival-card {
-      min-width: 250px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      text-align: center;
+    min-width: 200px; /* Smaller width on mobile */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
   }
   
   .homecards-festival-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
   }
   
   .homecards-festival-content {
-      padding: 10px;
+    padding: 8px;
   }
   
   .homecards-festival-content h3 {
-      color: #f39c12;
-      margin-bottom: 5px;
-      font-size: 1em; /* Adjusted size */
+    color: #f39c12;
+    margin-bottom: 5px;
+    font-size: 0.9em; /* Smaller size */
   }
   
   .homecards-festival-content p {
-      font-size: 0.9em;
-      color: #333;
+    font-size: 0.8em;
+    color: #333;
   }
   
   .homecards-festival-content a {
-      color: #3498db;
-      font-weight: bold;
-      text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
   }
   
   .homecards-news-container {
-      max-height: 300px;
-      overflow-y: auto;
-      padding-right: 10px;
+    max-height: 250px; /* Reduced height for mobile */
+    overflow-y: auto;
+    padding-right: 10px;
   }
   
   .homecards-news-item {
-      margin-bottom: 20px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
   }
   
   .homecards-news-item p {
-      color: #1C2B78; /* Updated color */
-      font-weight: bold;
-      margin-bottom: 5px;
+    color: #1C2B78;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em; /* Smaller font for mobile */
   }
   
   .homecards-news-item a {
-      color: #d9534f;
-      font-weight: bold;
-      text-decoration: none;
+    color: #d9534f;
+    font-weight: bold;
+    text-decoration: none;
   }
   
   .homecards-right-section ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 10px 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
   }
   
   .homecards-right-section ul li {
-      color: #1C2B78; /* Updated color */
-      margin-bottom: 8px;
+    color: #1C2B78;
+    margin-bottom: 8px;
+    font-size: 0.9em; /* Smaller font for mobile */
   }
   
   .homecards-right-section h2:nth-of-type(2) {
-      background-color: #d9534f;
+    background-color: #d9534f;
   }
   
   .homecards-right-section ul li:nth-of-type(1) {
-      margin-top: 5px;
+    margin-top: 5px;
   }
   
-  /* Media query for full-width adjustments on desktop */
+  /* Media query for tablet and larger screens */
   @media (min-width: 768px) {
-      .homecards-container {
-          width: 100%; /* Full width on desktop */
-          max-width: none; /* Remove max-width for full width */
-          padding: 20px 40px;
-      }
-      
-      .homecards-left-section,
-      .homecards-middle-section,
-      .homecards-right-section {
-          padding: 20px;
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-      }
+    .homecards-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr; /* 3-column layout for larger screens */
+      width: 100%;
+      max-width: none;
+      padding: 20px 40px;
+    }
+  
+    .homecards-left-section,
+    .homecards-middle-section,
+    .homecards-right-section {
+      padding: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  
+    .homecards-left-section h2,
+    .homecards-middle-section h2,
+    .homecards-right-section h2 {
+      font-size: 1.1em; /* Larger font size for desktop */
+    }
+  
+    .homecards-middle-section h3 {
+      font-size: 1.2em; /* Larger size for news headlines */
+    }
+  
+    .homecards-news-container {
+      max-height: 300px; /* Increased height for desktop */
+    }
   }
   
-  @media (max-width: 768px) {
-      .homecards-container {
-          width: 100%; /* Full width on mobile */
-      }
+  /* Media query for small mobile devices */
+  @media (max-width: 480px) {
+    .homecards-left-section h2,
+    .homecards-middle-section h2,
+    .homecards-right-section h2 {
+      font-size: 1.1em; /* Even smaller font size for small screens */
+    }
   
-      .homecards-left-section h2,
-      .homecards-middle-section h2,
-      .homecards-right-section h2 {
-          font-size: 1.2em; /* Adjust heading font size for smaller screens */
-      }
+    .homecards-news-item p {
+      font-size: 0.8em;
+    }
   
-      .homecards-middle-section h3 {
-          font-size: 1.1em; /* Adjust font size for news headlines */
-      }
+    .homecards-right-section ul li {
+      font-size: 0.8em;
+    }
   }
   

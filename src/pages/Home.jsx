@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../pages/Home.css';
 import { Homecards } from '../components/Homecards'; // Import Homecards
+import { HomeSection } from '../components/HomeSection';
 
 const movieImages = [
   "./b1.webp",
@@ -19,7 +20,7 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(createSlide, 8000);
+    const interval = setInterval(createSlide, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -56,6 +57,9 @@ export const Home = () => {
       {/* Second Homecards Section */}
       <div className="homecards-section">
         <Homecards /> {/* Render Homecards component here */}
+      </div>
+      <div className="homecards-section2">
+        <HomeSection /> {/* Render Homecards component here */}
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./layout/AppLayout";
 import { Home } from "./pages/Home";
 import { Footer } from "./Footer/Footer";
+import { HomeSection } from "./components/HomeSection";
 
 
 export const App = () => {
@@ -18,6 +19,10 @@ export const App = () => {
                 {
                     path: "/footer",
                     element: <Footer />
+                },
+                {
+                    path:"/homesection",
+                    element:<HomeSection/>
                 }
             ]
         }
