@@ -4,6 +4,7 @@ import { PublicationsSection } from "./HomeSection3";
 import { OnlineServices } from "./OnlineServices";
 import { RecentPhotos } from "./RecentPhotos";
 import { RecentVideos } from "./RecentVideos";
+import { LogoSection } from "./LogoSection";
 
 export const HomeSection = () => {
   return (
@@ -41,6 +42,14 @@ export const HomeSection = () => {
       <div className="RecentVideos1">
        <RecentVideos/>
       </div>
+
+     
+      <div className="logosection1">
+       <LogoSection/>
+      </div>
+
+ 
+
     </div>
   );
 };

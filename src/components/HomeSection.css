@@ -9,6 +9,10 @@
   background-color: #1d2671;
 }
 
+.email h4{
+align-items: left !important;
+}
+
 .box {
   width: 100%;
   max-width: 380px;

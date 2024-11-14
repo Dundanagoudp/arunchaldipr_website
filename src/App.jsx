@@ -7,6 +7,7 @@ import { PublicationsSection } from "./components/HomeSection3";
 import { OnlineServices } from "./components/OnlineServices";
 import { RecentPhotos } from "./components/RecentPhotos";
 import { RecentVideos } from "./components/RecentVideos";
+import { LogoSection } from "./components/LogoSection";
 
 
 export const App = () => {
@@ -43,6 +44,10 @@ export const App = () => {
                 {
                     path:"/recentvideos",
                     element:<RecentVideos/>
+                },
+                {
+                    path:"/logosection",
+                    element:<LogoSection/>
                 }
             ]
         }

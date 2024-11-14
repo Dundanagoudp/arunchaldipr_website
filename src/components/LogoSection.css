@@ -1,0 +1,82 @@
+/* General body styles */
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Container for the logo section */
+    .logo-section-container {
+      max-width: 80%;
+      margin: auto;
+      padding: 20px;
+      background-color: #e6f2ff;
+    }
+    
+    /* Sub-title for the section */
+    .logo-section-sub-title {
+      font-size: 20px;
+      color: #0066cc;
+      margin-bottom: 10px;
+    }
+    
+    .logo-section-sub-title a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+    
+    /* Title for the section */
+    .logo-section-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff3f3f;
+    }
+    
+    /* Carousel container */
+    .logo-section-carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      align-items: center !important;
+    }
+    
+    /* Track that holds all carousel items */
+    .logo-section-carousel-track {
+      display: flex;
+      animation: scroll 60s linear infinite;
+    }
+    
+    /* Individual carousel item */
+    .logo-section-carousel-item {
+      min-width: 150px;
+      margin: 10px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Ensure images inside carousel items are responsive */
+    .logo-section-carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Animation for seamless infinite scrolling effect */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    
+    /* Add duplicate items to make the scrolling seamless */
+    .logo-section-carousel-track::after {
+      content: "";
+      display: block;
+      width: 100%;
+    }
+    
