@@ -9,6 +9,9 @@ const movieImages = [
   "./b3.webp",
   "./b4.webp",
   "./b5.webp",
+  "./bb1.webp",
+  "./bb2.webp",
+  "./bb3.webp",
 ];
 
 export const Home = () => {

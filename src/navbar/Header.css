@@ -83,7 +83,7 @@
 .nav-menu a {
   text-decoration: none;
   color: #1C2B78;
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -92,10 +92,11 @@
 
 .nav-menu a:hover {
   color: #000;
+  text-decoration: none !important;
 }
 
 .home-icon {
-  font-size: 16px;
+  font-size: 18px;
   color: #1C2B78;
 }
 
