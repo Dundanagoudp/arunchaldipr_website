@@ -3,6 +3,9 @@ import AppLayout from "./layout/AppLayout";
 import { Home } from "./pages/Home";
 import { Footer } from "./Footer/Footer";
 import { HomeSection } from "./components/HomeSection";
+import { PublicationsSection } from "./components/HomeSection3";
+import { OnlineServices } from "./components/OnlineServices";
+import { RecentPhotos } from "./components/RecentPhotos";
 
 
 export const App = () => {
@@ -23,6 +26,18 @@ export const App = () => {
                 {
                     path:"/homesection",
                     element:<HomeSection/>
+                },
+                {
+                    path:"/publicationssection",
+                    element:<PublicationsSection/>
+                },
+                {
+                    path:"/onlineservices",
+                    element:<OnlineServices/>
+                },
+                {
+                    path:"/recentphotos",
+                    element:<RecentPhotos/>
                 }
             ]
         }

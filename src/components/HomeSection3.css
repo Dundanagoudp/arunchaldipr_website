@@ -1,0 +1,116 @@
+.publications-section {
+      width: 90%;
+      max-width: 1300px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .publications-section h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+  }
+  
+  /* Main Container */
+  .publications-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      width: 100%;
+  }
+  
+  .publication {
+      flex: 1 1 300px;
+      max-width: 30%;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      background-color: #fff;
+  }
+  
+  .publication img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+  
+  .publication p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #d43f3f;
+  }
+  
+  /* Horizontal Scroll */
+  .horizontal-scroll {
+      overflow-x: auto;
+      display: flex;
+      gap: 20px;
+  }
+  
+  .scroll-item {
+      min-width: 250px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+  }
+  
+  .scroll-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+  
+  .scroll-item p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #d43f3f;
+  }
+  
+  /* Responsive Design for Mobile Devices */
+  @media (max-width: 768px) {
+      .publications-section h2 {
+          font-size: 20px;
+      }
+  
+      .publications-container {
+          flex-direction: column;
+          gap: 20px;
+      }
+  
+      .publication {
+          max-width: 100%;
+          flex: 1 1 100%;
+      }
+  
+      .horizontal-scroll {
+          display: block;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .publications-section h2 {
+          font-size: 18px;
+      }
+  
+      .publication p,
+      .scroll-item p {
+          font-size: 14px;
+      }
+  
+      .scroll-item {
+          min-width: 200px;
+          padding: 8px;
+      }
+  }
+  
