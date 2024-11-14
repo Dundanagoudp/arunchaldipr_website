@@ -1,0 +1,56 @@
+body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Table Styling */
+    table {
+      width: 1200px;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: left;
+      word-wrap: break-word; /* Ensure text wraps within cells */
+      white-space: normal; /* Allow text to wrap in cells */
+    }
+
+    th {
+      background-color: #004080; /* Theme color */
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f3f6f9; /* Lighter background for even rows */
+    }
+
+    tr:hover {
+      background-color: #e9eef5; /* Row hover effect */
+    }
+
+    /* Mobile and Tablet Styling */
+    @media screen and (max-width: 768px) {
+      .table-container {
+        overflow-x: auto; /* Allow horizontal scroll for smaller screens */
+      }
+
+      th,
+      td {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      th,
+      td {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }

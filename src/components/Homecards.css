@@ -39,6 +39,7 @@
   .homecards-middle-section h3 {
     color: #d9534f;
     margin-bottom: 8px;
+    text-align: left;
     font-size: 1em; /* Smaller size for news headlines */
   }
   
@@ -71,12 +72,14 @@
   .homecards-festival-content h3 {
     color: #f39c12;
     margin-bottom: 5px;
+    text-align: left;
     font-size: 0.9em; /* Smaller size */
   }
   
   .homecards-festival-content p {
     font-size: 0.8em;
     color: #333;
+    text-align: left;
   }
   
   .homecards-festival-content a {
@@ -89,6 +92,7 @@
     max-height: 250px; /* Reduced height for mobile */
     overflow-y: auto;
     padding-right: 10px;
+    text-align: left;
   }
   
   .homecards-news-item {
@@ -119,6 +123,7 @@
   .homecards-right-section ul li {
     color: #1C2B78;
     margin-bottom: 8px;
+    text-align: left;
     font-size: 0.9em; /* Smaller font for mobile */
   }
   
