@@ -32,10 +32,10 @@ export const Header = () => {
       <div className="top-strip">
         <span className="date-time">{formatDateTime(currentDateTime)}</span>
         <div className="social-icons">
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaTwitter /></a>
-          <a href="#"><FaYoutube /></a>
-          <a href="#"><FaInstagram /></a>
+          <a href="https://www.facebook.com/p/Arunachal-Dipr-100050591554849/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+          <a href="https://x.com/arunachaldipr" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <a href="https://www.youtube.com/@diprarunx" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+          <a href="https://www.instagram.com/mygovarunachal/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <select className="language-select">
             <option value="English">English</option>
             <option value="Hindi">Hindi</option>
