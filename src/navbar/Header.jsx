@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../navbar/Header.css';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaHome, FaBars, FaTimes } from 'react-icons/fa';
+import { Dropdown, message, Space } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 
 export const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -24,6 +26,25 @@ export const Header = () => {
   const formatDateTime = (date) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
     return date.toLocaleString('en-US', options);
+  };
+
+  const items = [
+    {
+      label: <a href="/whowho">Who’s Who</a>,
+      key: '1',
+    },
+    {
+      label: <a href="#">Tourism</a>,
+      key: '2',
+    },
+    {
+      label: <a href="/media">Media</a>,
+      key: '3',
+    },
+  ];
+
+  const onClick = ({ key }) => {
+    message.info(`Click on item ${key}`);
   };
 
   return (
@@ -60,7 +81,21 @@ export const Header = () => {
         {/* Sidebar for Mobile Navigation */}
         <nav className={`nav-menu ${isSidebarOpen ? 'open' : ''}`}>
           <a href="/"><FaHome className="home-icon" /></a>
-          <a href="/about">About Us</a>
+
+          {/* Dropdown for About Us */}
+          <Dropdown
+            menu={{
+              items,
+              onClick,
+            }}
+          >
+            <a onClick={(e) => e.preventDefault()}>
+              <Space>
+                About Us <DownOutlined />
+              </Space>
+            </a>
+          </Dropdown>
+
           <a href="/whowho">Who’s Who</a>
           <a href="#">Directory</a>
           <a href="#">Tourism</a>
