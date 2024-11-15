@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../pages/Home.css';
 import { Homecards } from '../components/Homecards'; // Import Homecards
 import { HomeSection } from '../components/HomeSection';
+import { ApiPostData } from '../api/ApiPostData';
 
 const movieImages = [
   "./b1.webp",
@@ -60,6 +61,7 @@ export const Home = () => {
       {/* Second Homecards Section */}
       <div className="homecards-section">
         <Homecards /> 
+        {/* <ApiPostData/> */}
       </div>
       <div className="homecards-section2">
         <HomeSection /> 

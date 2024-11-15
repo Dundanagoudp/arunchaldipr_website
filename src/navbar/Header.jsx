@@ -35,13 +35,13 @@ export const Header = () => {
 
   const items = [
     {
-      label: <a href="/whowho">Who’s Who</a>,
-      key: '1',
-    },
-    {
-      label: <a href="#">Tourism</a>,
+      label: <a href="/about">About us</a>,
       key: '2',
     },
+    {
+      label: <a href="/whowho">Who’s Who</a>,
+      key: '1',
+    },    
     {
       label: <a href="/media">Media</a>,
       key: '3',

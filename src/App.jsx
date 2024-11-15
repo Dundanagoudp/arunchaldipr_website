@@ -9,6 +9,7 @@ import { Whowho } from "./pages/WhoWho";
 import { Media } from "./pages/Media";
 import { Contact } from "./pages/Contact";
 import { SinglePostPage } from "./pages/SinglePostpage";
+import { ApiPostData } from "./api/ApiPostData";
 
 
 export const App = () => {
@@ -49,6 +50,10 @@ export const App = () => {
                 {
                     path:"/singlepostPage",
                     element:<SinglePostPage/>
+                },
+                {
+                    path:"/apiPostdata",
+                    element:<ApiPostData/>
                 }
             ]
         }
