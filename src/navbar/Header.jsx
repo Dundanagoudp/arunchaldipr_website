@@ -2,14 +2,19 @@ import React, { useState, useEffect } from 'react';
 import '../navbar/Header.css';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaHome, FaBars, FaTimes } from 'react-icons/fa';
 import { Dropdown, message, Space } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+import { DownOutlined, UpOutlined } from '@ant-design/icons';
 
 export const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
   };
 
   // Update the date and time every second
@@ -88,10 +93,11 @@ export const Header = () => {
               items,
               onClick,
             }}
+            onOpenChange={toggleDropdown}
           >
             <a onClick={(e) => e.preventDefault()}>
               <Space>
-                About Us <DownOutlined />
+                About Us {isDropdownOpen ? <UpOutlined /> : <DownOutlined />}
               </Space>
             </a>
           </Dropdown>

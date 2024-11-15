@@ -5,7 +5,7 @@ export const RecentPhotos = () => {
   return (
     <div className="recent-photos-section">
       <h2>Recent Photos</h2>
-      <a href="#" className="gallery-link">Go to gallery</a>
+      <a href="/media" className="gallery-link">Go to gallery</a>
       <div className="photo-grid">
         <div className="photo-item">
           <img src="/r1.webp" alt="Itanagar Prepares for Grand Silver Jubilee Celebration of Indigenous Culture" />
