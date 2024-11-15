@@ -17,8 +17,6 @@ export const ApiPostData = () => {
                   
             }
       }
-
-
       useEffect(()=>{
             PostDataFetch();
       })
