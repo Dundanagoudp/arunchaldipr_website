@@ -1,16 +1,26 @@
-import "../pages/About.css";
+import React from "react";
+import {
+  AboutSection,
+  Breadcrumb,
+  DepartmentHeader,
+  DepartmentLogo,
+  DepartmentTitle,
+  DepartmentDescription,
+  TableContainer,
+  Table,
+} from "./About.styles";
 
 export const About = () => {
   return (
-    <div className="about-section">
-      <nav className="breadcrumb">
+    <AboutSection>
+      <Breadcrumb>
         <a href="/">Home</a> » <a href="#">About Us</a>
-      </nav>
-      <div className="department-header">
-        <img src="/logo.png" alt="Department Logo" className="department-logo" />
-        <h1 className="department-title">The Department</h1>
-      </div>
-      <div className="department-description">
+      </Breadcrumb>
+      <DepartmentHeader>
+        <DepartmentLogo src="/logo.png" alt="Department Logo" />
+        <DepartmentTitle>The Department</DepartmentTitle>
+      </DepartmentHeader>
+      <DepartmentDescription>
         <p>
           <strong>Department of Information and Public Relations (DIPR)</strong> of Arunachal Pradesh is the official
           agency responsible for disseminating government policies, programs, and initiatives to the public. Established
@@ -28,9 +38,9 @@ export const About = () => {
           that the department’s messages are widespread and impactful.
         </p>
         <p>Here is a list of our officials:</p>
-      </div>
-      <div className="table-container">
-        <table>
+      </DepartmentDescription>
+      <TableContainer>
+        <Table>
           <thead>
             <tr>
               <th>Name & Designation</th>
@@ -107,8 +117,8 @@ export const About = () => {
               <td><a href="tel:9774627168">9774627168</a></td>
             </tr>
           </tbody>
-        </table>
-      </div>
-    </div>
+        </Table>
+      </TableContainer>
+    </AboutSection>
   );
 };

@@ -1,56 +1,99 @@
-body {
-      font-family: Arial, sans-serif;
-    }
+.breadcrumb{
+  align-items: left !important;
+}
 
-    /* Table Styling */
-    table {
-      width: 1200px;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
+/* Table Container Styling */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-    th,
-    td {
-      border: 1px solid #ddd;
-      padding: 12px 15px;
-      text-align: left;
-      word-wrap: break-word; /* Ensure text wraps within cells */
-      white-space: normal; /* Allow text to wrap in cells */
-    }
+/* Table Styling */
+table {
+  width: 100%;
+  max-width: 1200px; /* Ensure the table doesn't exceed a reasonable size */
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Clip contents for rounded edges */
+}
 
-    th {
-      background-color: #004080; /* Theme color */
-      color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  word-wrap: break-word; /* Ensure text wraps within cells */
+  white-space: normal; /* Allow text to wrap in cells */
+}
 
-    tr:nth-child(even) {
-      background-color: #f3f6f9; /* Lighter background for even rows */
-    }
+th {
+  background-color: #004080; /* Theme color */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
-    tr:hover {
-      background-color: #e9eef5; /* Row hover effect */
-    }
+tr:nth-child(even) {
+  background-color: #f3f6f9; /* Lighter background for even rows */
+}
 
-    /* Mobile and Tablet Styling */
-    @media screen and (max-width: 768px) {
-      .table-container {
-        overflow-x: auto; /* Allow horizontal scroll for smaller screens */
-      }
+tr:hover {
+  background-color: #e9eef5; /* Row hover effect */
+}
 
-      th,
-      td {
-        font-size: 14px;
-        padding: 10px;
-      }
-    }
+/* Add a gap between the table and the body edges */
+table {
+  margin: 0 auto; /* Center the table horizontally */
+}
 
-    @media screen and (max-width: 480px) {
-      th,
-      td {
-        font-size: 12px;
-        padding: 8px;
-      }
-    }
+/* Mobile and Tablet Styling */
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto; /* Allow horizontal scroll for smaller screens */
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  th,
+  td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+
+.breadcrumb {
+  display: flex; /* Ensure breadcrumb is treated as a flex container */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Center vertically for better alignment */
+  padding: 10px; /* Optional padding for spacing */
+  font-size: 14px; /* Adjust font size if needed */
+  color: #333; /* Default breadcrumb text color */
+}
+
+.breadcrumb a {
+  text-decoration: none; /* Remove underlines */
+  color: #004080; /* Breadcrumb link color */
+  margin-right: 5px; /* Spacing between breadcrumb items */
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline; /* Optional hover effect for links */
+}
+
+.breadcrumb span {
+  margin: 0 5px; /* Spacing for separators */
+  color: #888; /* Separator color */
+}
+
